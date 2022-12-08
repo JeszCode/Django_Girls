@@ -10,6 +10,7 @@ class Post(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
+
 # METHOD AND FUNCTION FOR THIS POST
 
     def publish(self):
@@ -18,3 +19,4 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
